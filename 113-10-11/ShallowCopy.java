@@ -1,5 +1,3 @@
-package cc.openhome;
-
 class Clothes {
     String color;
     char size;
@@ -12,6 +10,7 @@ class Clothes {
 public class ShallowCopy {
     public static void main(String[] args) {
         Clothes[] c1 = {new Clothes("red", 'L'), new Clothes("blue", 'M')};
+        clothes[] c2 = new C
         var c2 = new Clothes[c1.length];
         
         for(var i = 0; i < c1.length; i++) {

@@ -1,5 +1,3 @@
-package cc.openhome;
-
 class Clothes2 {
     String color;
     char size;
@@ -12,6 +10,7 @@ class Clothes2 {
 public class DeepCopy {
     public static void main(String[] args) {
         Clothes2[] c1 = {new Clothes2("red", 'L'), new Clothes2("blue", 'M')};
+        Clothes2
         var c2 = new Clothes2[c1.length];
         
         for(var i = 0; i < c1.length; i++) {
