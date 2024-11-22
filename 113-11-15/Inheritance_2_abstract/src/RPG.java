@@ -26,4 +26,17 @@ public class RPG {
         magician.fight();
         magician.cure();
     }
+
+    static void drawFight(Role role) {
+        if (role instanceof SwordMan) {
+            System.out.print(role.getName());
+            role.fight();
+        }else if (role instanceof Magician) {
+            System.out.print(role.getName());
+            role.fight();
+            ((Magician) role).cure();
+        } else {
+            System.out.println("此腳色不存在");
+        }
+    }
 }
