@@ -26,5 +26,14 @@ public class Role {
     public void setName(String name) {
         this.name = name;
     }
+
+    public void fight() {
+        System.out.println("發動攻擊");
+    }
+
+    @Override
+    public String toString(){
+        return String.format("(%s, %d, %d)",blood,level,name);
+    }
 }
-    public abstract
+
